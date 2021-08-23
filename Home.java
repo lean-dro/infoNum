@@ -149,7 +149,7 @@ public class Home extends JFrame {
 					Matcher procurarLetras = letras.matcher(tfNumero.getText().toString());
 					boolean temLetrasDuvida = procurarLetras.find();
 					if(temLetrasDuvida) {
-						lblAviso.setText("Só números :)");
+						lblAviso.setText("SÃ³ nÃºmeros :)");
 					}
 					else {
 						double numero = Double.parseDouble(tfNumero.getText().toString());
@@ -185,7 +185,7 @@ public class Home extends JFrame {
 							lblPrimoR.setText("Sim");
 						}
 						else {
-							lblPrimoR.setText("Não");
+							lblPrimoR.setText("NÃ£o");
 						}
 						//Multiplos
 						double[] multiplos = new double [(int) gaveta];
@@ -231,6 +231,7 @@ public class Home extends JFrame {
 				tfFatorial.setText("");
 				tfNumero.setText("");
 				tfNumero.requestFocus();
+				lblTabu.setText("");
 			
 			}
 		});
